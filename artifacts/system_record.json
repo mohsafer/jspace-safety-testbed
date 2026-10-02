@@ -1,0 +1,72 @@
+{
+ "recorded_utc": "2026-09-27T15:07:55.361445+00:00",
+ "infrastructure": {
+  "provider": "CloudLab (US-Wisconsin testbed, ops.wisc.cloudlab.us)",
+  "project": "cloudfaas-PG0",
+  "experiment": "khayyampaper",
+  "hostname": "node0.khayyampaper.cloudfaas-pg0.wisc.cloudlab.us",
+  "fqdn": "node0.khayyampaper.cloudfaas-pg0.wisc.cloudlab.us"
+ },
+ "os": {
+  "distro": "Ubuntu 22.04.2 LTS",
+  "kernel": "5.15.0-187-generic",
+  "boot": "EFI, SecureBoot disabled"
+ },
+ "gpu": {
+  "model": "NVIDIA A30 PCIe",
+  "architecture": "Ampere (GA100GL), compute capability 8.0 (sm_80)",
+  "vram_mib": 24576,
+  "memory_type": "HBM2e",
+  "serial": "1321821046743",
+  "uuid": "GPU-cd7dec18-d2a2-883d-06e7-8686099dc844",
+  "driver": "595.91.07 (CUDA 13.2 driver)",
+  "persistence_mode": "Enabled",
+  "ecc": "Enabled",
+  "power_limit_w": 165,
+  "pcie": "gen4 x16",
+  "tensor_core_precisions": [
+   "bf16",
+   "fp16",
+   "int8",
+   "tf32"
+  ]
+ },
+ "cpu": {
+  "model": "2x AMD EPYC 7302 16-Core Processor",
+  "cores": 32,
+  "threads": 64,
+  "numa_nodes": 2,
+  "vector": "AVX2"
+ },
+ "memory_gb": 125,
+ "storage": {
+  "root_ssd": "63 GB (workspace + venv; 87% used at record time)",
+  "proj_nfs": "/proj/cloudfaas-PG0 100 GB quota (HF cache; ~98% used)",
+  "share_nfs": "/share 50 GB (read-only on this node)",
+  "hf_home": "/proj/cloudfaas-PG0/hf-cache"
+ },
+ "software_stack": {
+  "python": "3.12.14 (deadsnakes PPA)",
+  "venv": "/users/mosafer/spacepriv8/.venv (rebuilt on this node)",
+  "torch": "2.14.0+cu130",
+  "transformers": "5.17.0",
+  "peft": "0.20.0",
+  "accelerate": "1.15.0",
+  "bitsandbytes": "0.50.2",
+  "numpy": "2.5.3",
+  "datasets": "5.0.1",
+  "cuda_variant": "cu130 (newest variant; sm_80 supported)"
+ },
+ "measured_performance": {
+  "fp32_matmul_tflops_4096": 8.9,
+  "bf16_matmul": "OK (true-bf16 weights supported)",
+  "fp16_matmul": "OK",
+  "p1_lens_fit_reference": "SmolLM2-135M fp32: 46 s GPU end-to-end smoke; sanity cos 1.0000",
+  "dpo_1.5b_reference": "Qwen2.5-1.5B LoRA-DPO 152 steps: ~13 min GPU (P100 est. was ~1.5 h)"
+ },
+ "supervision": {
+  "watchdog": "scripts/watchdog6.sh v3 (pidfile liveness, GPU workload monitor -> artifacts/gpu_workload.csv)",
+  "sentinel": "utils/gpu_sentinel.sh (attached; exit notifies the session)",
+  "policy": "detached setsid launch; logs tee'd to artifacts/gpu_programN.log; resume guards = JSON-completion-marker / merged-checkpoint"
+ }
+}

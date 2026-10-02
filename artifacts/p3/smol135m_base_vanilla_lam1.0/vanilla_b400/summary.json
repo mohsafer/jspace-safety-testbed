@@ -1,0 +1,12 @@
+{
+ "target": "smol135m_base_vanilla_lam1.0",
+ "arm": "vanilla",
+ "n_prompts": 15,
+ "tau95": 4.630207538604736,
+ "affirm_success_rate": 0.6666666666666666,
+ "refusal_rate": 0.3333333333333333,
+ "alarm_rate": 0.2,
+ "T_saf_mean": 3.049031505982081,
+ "latent_mean": 0.6522084800633812,
+ "gap_G_mean": 0.6287723339087972
+}

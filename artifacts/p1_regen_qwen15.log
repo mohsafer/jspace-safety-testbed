@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:40,  8.33it/s]Loading weights:  47%|████▋     | 159/338 [00:00<00:00, 856.06it/s]Loading weights:  79%|███████▉  | 267/338 [00:00<00:00, 919.05it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 858.17it/s]
+[qwen15b_instruct/seed0_calibwikitext_w0] loaded on cpu/float32 (13s)

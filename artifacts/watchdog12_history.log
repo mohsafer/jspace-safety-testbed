@@ -1,0 +1,5 @@
+[watchdog12 09-29 14:29:56] program12 not running — (re)starting (attempt 2/3)
+[watchdog12 09-29 15:22:01] program12 not running — (re)starting (attempt 3/3)
+[watchdog12 09-29 17:24:08] GIVE UP: program12 failed 3 attempts — manual attention needed
+[watchdog13 09-29 17:56:30] === watchdog13 v3 start (pid 160258, max 3 restarts, poll 600s, GPU monitor on) ===
+[watchdog13 09-29 17:56:30] program13 not running — (re)starting (attempt 1/3)

@@ -1,0 +1,76 @@
+=== GPU_PROGRAM5(qwen34-CPU)_START 2026-09-26T14:58:14-05:00
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:  11%|█         | 44/398 [00:00<00:00, 430.07it/s]Loading weights:  22%|██▏       | 88/398 [00:00<00:00, 434.08it/s]Loading weights:  33%|███▎      | 132/398 [00:00<00:00, 432.20it/s]Loading weights:  45%|████▍     | 179/398 [00:00<00:00, 431.60it/s]Loading weights:  56%|█████▌    | 223/398 [00:00<00:00, 428.74it/s]Loading weights:  67%|██████▋   | 266/398 [00:00<00:00, 424.67it/s]Loading weights:  78%|███████▊  | 309/398 [00:00<00:00, 393.04it/s]Loading weights:  88%|████████▊ | 352/398 [00:00<00:00, 388.98it/s]Loading weights:  98%|█████████▊| 392/398 [00:00<00:00, 383.98it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 410.58it/s]
+[qwen3_4b_instruct/seed0_calibwikitext_w0] loaded on cpu/float32 (4s)
+[qwen3_4b_instruct/seed0_calibwikitext_w0] lens fit: 64 prompts x 8 cot in 1256s
+[qwen3_4b_instruct/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 1172s
+[qwen3_4b_instruct/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.959 ComplAUC=0.299 SH=+1.161 amp_peak=1.58@L2 (1256s fit + 1172s eval)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:43,  9.12it/s]Loading weights:  18%|█▊        | 71/398 [00:00<00:00, 390.19it/s]Loading weights:  29%|██▊       | 114/398 [00:00<00:00, 405.72it/s]Loading weights:  39%|███▉      | 157/398 [00:00<00:00, 407.32it/s]Loading weights:  51%|█████     | 201/398 [00:00<00:00, 401.45it/s]Loading weights:  62%|██████▏   | 245/398 [00:00<00:00, 406.71it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 416.31it/s]Loading weights:  84%|████████▎ | 333/398 [00:00<00:00, 412.74it/s]Loading weights:  94%|█████████▍| 375/398 [00:00<00:00, 407.61it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 392.27it/s]
+[qwen3_4b_instruct/seed1_calibwikitext_w0] loaded on cpu/float32 (3s)
+[qwen3_4b_instruct/seed1_calibwikitext_w0] lens fit: 64 prompts x 8 cot in 1288s
+[qwen3_4b_instruct/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 1326s
+[qwen3_4b_instruct/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.948 ComplAUC=0.396 SH=+1.053 amp_peak=1.89@L1 (1288s fit + 1326s eval)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<00:53,  7.44it/s]Loading weights:  20%|█▉        | 78/398 [00:00<00:00, 400.05it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 393.81it/s]Loading weights:  42%|████▏     | 168/398 [00:00<00:00, 400.23it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 393.32it/s]Loading weights:  64%|██████▍   | 256/398 [00:00<00:00, 403.25it/s]Loading weights:  78%|███████▊  | 310/398 [00:00<00:00, 428.39it/s]Loading weights:  89%|████████▉ | 354/398 [00:00<00:00, 426.13it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 401.14it/s]
+[qwen3_4b_base/seed0_calibwikitext_w0] loaded on cpu/float32 (4s)
+=== GPU_PROGRAM5_RESUME 2026-09-26T17:42:35-05:00
+[qwen3_4b_instruct/seed0_calibwikitext_w0] exists, skipping
+[qwen3_4b_instruct/seed1_calibwikitext_w0] exists, skipping
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   9%|▉         | 36/398 [00:00<00:01, 332.39it/s]Loading weights:  20%|██        | 80/398 [00:00<00:00, 357.75it/s]Loading weights:  31%|███       | 124/398 [00:00<00:00, 375.08it/s]Loading weights:  42%|████▏     | 168/398 [00:00<00:00, 373.95it/s]Loading weights:  53%|█████▎    | 210/398 [00:00<00:00, 387.49it/s]Loading weights:  63%|██████▎   | 249/398 [00:00<00:00, 368.63it/s]Loading weights:  73%|███████▎  | 289/398 [00:00<00:00, 365.22it/s]Loading weights:  83%|████████▎ | 331/398 [00:00<00:00, 381.24it/s]Loading weights:  93%|█████████▎| 370/398 [00:00<00:00, 370.54it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 374.89it/s]
+[qwen3_4b_base/seed0_calibwikitext_w0] loaded on cpu/float32 (4s)
+[qwen3_4b_base/seed0_calibwikitext_w0] lens fit: 64 prompts x 8 cot in 1207s
+[qwen3_4b_base/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 1139s
+[qwen3_4b_base/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.919 ComplAUC=0.502 SH=+0.917 amp_peak=1.76@L19 (1207s fit + 1139s eval)
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights:   0%|          | 1/398 [00:00<01:06,  5.93it/s]Loading weights:  20%|██        | 80/398 [00:00<00:00, 361.44it/s]Loading weights:  32%|███▏      | 126/398 [00:00<00:00, 382.77it/s]Loading weights:  43%|████▎     | 170/398 [00:00<00:00, 386.58it/s]Loading weights:  53%|█████▎    | 212/398 [00:00<00:00, 384.59it/s]Loading weights:  65%|██████▍   | 257/398 [00:00<00:00, 395.02it/s]Loading weights:  75%|███████▌  | 300/398 [00:00<00:00, 393.92it/s]Loading weights:  86%|████████▋ | 344/398 [00:00<00:00, 390.53it/s]Loading weights:  97%|█████████▋| 388/398 [00:01<00:00, 378.83it/s]Loading weights: 100%|██████████| 398/398 [00:01<00:00, 374.45it/s]
+[qwen3_4b_base/seed1_calibwikitext_w0] loaded on cpu/float32 (3s)
+[qwen3_4b_base/seed1_calibwikitext_w0] lens fit: 64 prompts x 8 cot in 1216s
+[qwen3_4b_base/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 1075s
+[qwen3_4b_base/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.887 ComplAUC=0.453 SH=+0.934 amp_peak=1.85@L23 (1216s fit + 1075s eval)
+slug                   seeds             SafetyAUC  ComplAUC  Headroom  amp_pk  sanity
+qwen05b_base           [0, 1, 2]   0.665±0.049     0.676    +0.489    1.69  1.0000
+qwen05b_base_dpo_base  [0]         0.728±0.000     0.698    +0.530    1.62  1.0000
+qwen05b_base_dpo_jpen_lam1.0 [0]         0.553±0.000     0.553    +0.500    2.02  1.0000
+qwen05b_base_dpo_vanilla_lam1.0 [0]         0.541±0.000     0.551    +0.490    1.97  1.0000
+qwen05b_instruct       [0, 1, 2]   0.564±0.032     0.689    +0.376    1.55  1.0000
+qwen15b_base           [0, 1, 2]   0.531±0.113     0.656    +0.375    1.70  1.0000
+qwen15b_base_dpo_base  [0]         0.537±0.000     0.656    +0.381    1.77  1.0000
+qwen15b_instruct       [0, 1, 2]   0.790±0.018     0.488    +0.802    1.35  1.0000
+qwen3_4b_base          [0, 1]      0.903±0.016     0.478    +0.925    1.80  1.0000
+qwen3_4b_instruct      [0, 1]      0.954±0.006     0.347    +1.107    1.73  1.0000
+smol135m_base          [0, 1, 2, 3, 4]  0.697±0.045     0.627    +0.570    2.78  1.0000
+smol135m_base_dpo_base [0]         0.668±0.000     0.637    +0.531    2.45  1.0000
+smol135m_base_dpo_jpen_lam1.0 [0]         0.788±0.000     0.692    +0.597    2.99  1.0000
+smol135m_base_dpo_jpen_lam1.0_seed1 [1]         0.672±0.000     0.687    +0.486    3.47  1.0000
+smol135m_base_dpo_jpen_lam1.0_seed2 [2]         0.812±0.000     0.586    +0.726    3.35  1.0000
+smol135m_base_dpo_vanilla_lam1.0 [0]         0.793±0.000     0.690    +0.603    3.00  1.0000
+smol135m_base_dpo_vanilla_lam1.0_seed1 [1]         0.672±0.000     0.685    +0.487    3.47  1.0000
+smol135m_base_dpo_vanilla_lam1.0_seed2 [2]         0.810±0.000     0.583    +0.728    3.34  1.0000
+smol135m_instruct      [0, 1, 2, 3, 4]  0.581±0.109     0.858    +0.223    2.79  1.0000
+smol360m_base          [0, 1, 2]   0.485±0.153     0.692    +0.293    2.58  1.0000
+smol360m_base_dpo_base [0]         0.489±0.000     0.744    +0.245    2.74  1.0000
+smol360m_base_dpo_jpen_lam1.0 [0]         0.538±0.000     0.698    +0.340    2.82  1.0000
+smol360m_base_dpo_jpen_lam1.0_seed1 [1]         0.318±0.000     0.647    +0.171    2.57  1.0000
+smol360m_base_dpo_jpen_lam1.0_seed2 [2]         0.680±0.000     0.630    +0.551    2.67  1.0000
+smol360m_base_dpo_vanilla_lam1.0 [0]         0.537±0.000     0.694    +0.342    2.81  1.0000
+smol360m_base_dpo_vanilla_lam1.0_seed1 [1]         0.319±0.000     0.642    +0.176    2.58  1.0000
+smol360m_base_dpo_vanilla_lam1.0_seed2 [2]         0.684±0.000     0.628    +0.556    2.67  1.0000
+smol360m_instruct      [0, 1, 2]   0.467±0.038     0.823    +0.144    1.62  1.0000
+
+pair deltas (instruct - base, paired by seed):
+  smol135: dSafetyAUC=-0.116±0.105 dCompl=+0.231 dHeadroom=-0.347 (n=5 seeds)
+  smol360: dSafetyAUC=-0.018±0.167 dCompl=+0.131 dHeadroom=-0.148 (n=3 seeds)
+  qwen05: dSafetyAUC=-0.100±0.039 dCompl=+0.013 dHeadroom=-0.113 (n=3 seeds)
+  qwen15: dSafetyAUC=+0.259±0.131 dCompl=-0.168 dHeadroom=+0.427 (n=3 seeds)
+  qwen34: dSafetyAUC=+0.051±0.010 dCompl=-0.131 dHeadroom=+0.181 (n=2 seeds)
+macros: 149 -> /users/mosafer/spacepriv8/paper/numbers.tex
+tables -> /users/mosafer/spacepriv8/paper/tables
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+fig1 done
+fig2 done
+fig3 done
+fig4 done
+fig5 done
+fig6 done
+fig7 done
+fig10 done
+GPU_PROGRAM5_COMPLETE 2026-09-26T19:05:14-05:00

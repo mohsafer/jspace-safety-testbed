@@ -1,0 +1,121 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3245.12it/s]
+[smol135m_instruct/seed0_calibwikitext_w0] loaded (1s)
+[smol135m_instruct/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 159s
+[smol135m_instruct/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 75s
+[smol135m_instruct/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.675 ComplAUC=0.859 SH=+0.316 amp_peak=2.84@L24 (159s fit + 75s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3019.07it/s]
+[smol135m_instruct/seed1_calibwikitext_w0] loaded (1s)
+[smol135m_instruct/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 167s
+[smol135m_instruct/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 92s
+[smol135m_instruct/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.492 ComplAUC=0.860 SH=+0.132 amp_peak=2.75@L24 (167s fit + 92s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 2942.10it/s]
+[smol135m_instruct/seed2_calibwikitext_w0] loaded (1s)
+[smol135m_instruct/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 174s
+[smol135m_instruct/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 88s
+[smol135m_instruct/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.709 ComplAUC=0.861 SH=+0.348 amp_peak=2.81@L2 (174s fit + 88s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3118.99it/s]
+[smol135m_base/seed0_calibwikitext_w0] loaded (1s)
+[smol135m_base/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 143s
+[smol135m_base/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 65s
+[smol135m_base/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.668 ComplAUC=0.637 SH=+0.531 amp_peak=2.45@L1 (143s fit + 65s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3028.15it/s]
+[smol135m_base/seed1_calibwikitext_w0] loaded (1s)
+[smol135m_base/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 146s
+[smol135m_base/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 86s
+[smol135m_base/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.628 ComplAUC=0.660 SH=+0.468 amp_peak=3.26@L13 (146s fit + 86s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 2958.80it/s]
+[smol135m_base/seed2_calibwikitext_w0] loaded (1s)
+[smol135m_base/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 147s
+[smol135m_base/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 68s
+[smol135m_base/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.757 ComplAUC=0.584 SH=+0.672 amp_peak=2.77@L13 (147s fit + 68s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  72%|███████▏  | 210/290 [00:00<00:00, 2056.06it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2054.64it/s]
+[smol360m_instruct/seed0_calibwikitext_w0] loaded (1s)
+[smol360m_instruct/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 279s
+[smol360m_instruct/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 125s
+[smol360m_instruct/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.414 ComplAUC=0.751 SH=+0.163 amp_peak=1.63@L20 (279s fit + 125s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  78%|███████▊  | 226/290 [00:00<00:00, 2242.87it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2300.92it/s]
+[smol360m_instruct/seed1_calibwikitext_w0] loaded (1s)
+[smol360m_instruct/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 273s
+[smol360m_instruct/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 157s
+[smol360m_instruct/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.504 ComplAUC=0.860 SH=+0.143 amp_peak=1.54@L5 (273s fit + 157s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  87%|████████▋ | 253/290 [00:00<00:00, 2529.16it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2554.24it/s]
+[smol360m_instruct/seed2_calibwikitext_w0] loaded (1s)
+[smol360m_instruct/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 275s
+[smol360m_instruct/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 125s
+[smol360m_instruct/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.483 ComplAUC=0.856 SH=+0.127 amp_peak=1.68@L20 (275s fit + 125s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 237/290 [00:00<00:00, 2345.88it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2408.92it/s]
+[smol360m_base/seed0_calibwikitext_w0] loaded (1s)
+[smol360m_base/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 245s
+[smol360m_base/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 129s
+[smol360m_base/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.489 ComplAUC=0.744 SH=+0.245 amp_peak=2.74@L23 (245s fit + 129s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  83%|████████▎ | 241/290 [00:00<00:00, 2406.99it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2413.94it/s]
+[smol360m_base/seed1_calibwikitext_w0] loaded (1s)
+[smol360m_base/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 245s
+[smol360m_base/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 130s
+[smol360m_base/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.295 ComplAUC=0.683 SH=+0.113 amp_peak=2.44@L23 (245s fit + 130s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  90%|████████▉ | 260/290 [00:00<00:00, 2598.95it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2631.47it/s]
+[smol360m_base/seed2_calibwikitext_w0] loaded (1s)
+[smol360m_base/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 243s
+[smol360m_base/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 131s
+[smol360m_base/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.671 ComplAUC=0.650 SH=+0.520 amp_peak=2.56@L23 (243s fit + 131s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  80%|████████  | 233/290 [00:00<00:00, 2328.04it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2439.29it/s]
+[qwen05b_instruct/seed0_calibwikitext_w0] loaded (1s)
+[qwen05b_instruct/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 289s
+[qwen05b_instruct/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 258s
+[qwen05b_instruct/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.604 ComplAUC=0.713 SH=+0.392 amp_peak=1.51@L12 (289s fit + 258s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  81%|████████▏ | 236/290 [00:00<00:00, 2358.49it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2380.34it/s]
+[qwen05b_instruct/seed1_calibwikitext_w0] loaded (1s)
+[qwen05b_instruct/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 293s
+[qwen05b_instruct/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 172s
+[qwen05b_instruct/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.563 ComplAUC=0.698 SH=+0.365 amp_peak=1.65@L12 (293s fit + 172s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  84%|████████▍ | 245/290 [00:00<00:00, 2425.30it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2509.33it/s]
+[qwen05b_instruct/seed2_calibwikitext_w0] loaded (1s)
+[qwen05b_instruct/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 300s
+[qwen05b_instruct/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 215s
+[qwen05b_instruct/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.526 ComplAUC=0.656 SH=+0.370 amp_peak=1.49@L19 (300s fit + 215s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 239/290 [00:00<00:00, 2380.71it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2391.34it/s]
+[qwen05b_base/seed0_calibwikitext_w0] loaded (1s)
+[qwen05b_base/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 257s
+[qwen05b_base/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 234s
+[qwen05b_base/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.728 ComplAUC=0.698 SH=+0.530 amp_peak=1.62@L20 (257s fit + 234s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  84%|████████▍ | 244/290 [00:00<00:00, 2392.93it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2487.44it/s]
+[qwen05b_base/seed1_calibwikitext_w0] loaded (1s)
+[qwen05b_base/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 255s
+[qwen05b_base/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 226s
+[qwen05b_base/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.608 ComplAUC=0.660 SH=+0.448 amp_peak=1.71@L19 (255s fit + 226s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  72%|███████▏  | 209/290 [00:00<00:00, 2062.11it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2248.65it/s]
+[qwen05b_base/seed2_calibwikitext_w0] loaded (1s)
+[qwen05b_base/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 257s
+[qwen05b_base/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 244s
+[qwen05b_base/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.657 ComplAUC=0.669 SH=+0.489 amp_peak=1.73@L19 (257s fit + 244s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 89/338 [00:00<00:00, 864.01it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 1041.51it/s]Loading weights:  93%|█████████▎| 316/338 [00:00<00:00, 1046.77it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1070.67it/s]
+[qwen15b_instruct/seed0_calibwikitext_w0] loaded (2s)
+[qwen15b_instruct/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 857s
+[qwen15b_instruct/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 445s
+[qwen15b_instruct/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.790 ComplAUC=0.536 SH=+0.753 amp_peak=1.51@L16 (857s fit + 445s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 87/338 [00:00<00:00, 789.22it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 995.47it/s]Loading weights:  93%|█████████▎| 315/338 [00:00<00:00, 999.31it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1008.21it/s]
+[qwen15b_instruct/seed1_calibwikitext_w0] loaded (1s)
+[qwen15b_instruct/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 849s
+[qwen15b_instruct/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 545s
+[qwen15b_instruct/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.769 ComplAUC=0.480 SH=+0.789 amp_peak=1.28@L17 (849s fit + 545s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  30%|██▉       | 101/338 [00:00<00:00, 1002.85it/s]Loading weights:  65%|██████▍   | 219/338 [00:00<00:00, 1068.61it/s]Loading weights:  96%|█████████▋| 326/338 [00:00<00:00, 1052.59it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1076.65it/s]
+[qwen15b_instruct/seed2_calibwikitext_w0] loaded (2s)
+[qwen15b_instruct/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 861s
+[qwen15b_instruct/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 423s
+[qwen15b_instruct/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.812 ComplAUC=0.449 SH=+0.863 amp_peak=1.24@L6 (861s fit + 423s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  26%|██▋       | 89/338 [00:00<00:00, 879.23it/s]Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 1032.47it/s]Loading weights:  93%|█████████▎| 315/338 [00:00<00:00, 1034.18it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1036.34it/s]
+[qwen15b_base/seed0_calibwikitext_w0] loaded (2s)
+[qwen15b_base/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 747s
+[qwen15b_base/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 456s
+[qwen15b_base/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.539 ComplAUC=0.656 SH=+0.383 amp_peak=1.77@L9 (747s fit + 456s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 88/338 [00:00<00:00, 874.73it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 1043.26it/s]Loading weights:  92%|█████████▏| 312/338 [00:00<00:00, 1024.63it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1037.67it/s]
+[qwen15b_base/seed1_calibwikitext_w0] loaded (2s)
+[qwen15b_base/seed1_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 747s
+[qwen15b_base/seed1_calibwikitext_w0] readouts: 313 danger / 250 benign in 469s
+[qwen15b_base/seed1_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.666 ComplAUC=0.652 SH=+0.513 amp_peak=1.73@L9 (747s fit + 469s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  33%|███▎      | 110/338 [00:00<00:00, 1099.54it/s]Loading weights:  65%|██████▌   | 220/338 [00:00<00:00, 1040.24it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 1037.38it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 1069.66it/s]
+[qwen15b_base/seed2_calibwikitext_w0] loaded (1s)
+[qwen15b_base/seed2_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 733s
+[qwen15b_base/seed2_calibwikitext_w0] readouts: 313 danger / 250 benign in 481s
+[qwen15b_base/seed2_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.389 ComplAUC=0.660 SH=+0.229 amp_peak=1.61@L7 (733s fit + 481s eval)

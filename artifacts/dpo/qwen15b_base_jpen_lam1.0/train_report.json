@@ -1,0 +1,10 @@
+{
+ "steps": 152,
+ "variant": "jpen",
+ "lam": 1.0,
+ "beta": 0.1,
+ "lr": 0.0001,
+ "n_pairs": 2424,
+ "final_loss": 1.9971489906311035,
+ "final_acc": 1.0
+}

@@ -1,0 +1,23 @@
+[watchdog13 09-29 19:08:35] program13 not running — (re)starting (attempt 2/3)
+[watchdog13 09-29 19:20:41] program13 not running — (re)starting (attempt 3/3)
+[watchdog14 09-29 19:31:53] === watchdog14 v3 start (pid 168526, max 3 restarts, poll 600s, GPU monitor on) ===
+[watchdog14 09-29 19:31:53] program14 not running — (re)starting (attempt 1/3)
+[watchdog13 09-29 19:32:46] GIVE UP: program13 failed 3 attempts — manual attention needed
+[watchdog14 09-29 19:43:58] program14 not running — (re)starting (attempt 2/3)
+[watchdog14 09-29 19:56:03] program14 not running — (re)starting (attempt 3/3)
+[watchdog14 09-29 20:08:08] ADVISORY ORPHAN: 5875 MiB GPU memory held with no program alive (cleaned before any restart)
+[watchdog14 09-29 20:08:08] GIVE UP: program14 failed 3 attempts — manual attention needed
+[watchdog15 09-29 20:53:03] === watchdog15 v3 start (pid 173816, max 3 restarts, poll 600s, GPU monitor on) ===
+[watchdog15 09-29 20:53:03] program15 not running — (re)starting (attempt 1/3)
+[watchdog15 09-29 23:15:10] SUCCESS: GPU_PROGRAM15_COMPLETE marker found
+[watchdog17 10-01 06:22:31] === watchdog17 v3 start (pid 300635, max 3 restarts, poll 600s, GPU monitor on) ===
+[watchdog17 10-01 06:22:31] ADVISORY ORPHAN: 1001 MiB GPU memory held with no program alive (cleaned before any restart)
+[watchdog17 10-01 06:22:31] program17 not running — (re)starting (attempt 1/3)
+[watchdog17 10-01 06:34:36] ADVISORY ORPHAN: 4529 MiB GPU memory held with no program alive (cleaned before any restart)
+[watchdog17 10-01 06:34:36] program17 not running — (re)starting (attempt 2/3)
+[watchdog17 10-01 06:46:41] ADVISORY ORPHAN: 3149 MiB GPU memory held with no program alive (cleaned before any restart)
+[watchdog17 10-01 06:46:41] program17 not running — (re)starting (attempt 3/3)
+[watchdog17 10-01 06:58:46] ADVISORY ORPHAN: 2851 MiB GPU memory held with no program alive (cleaned before any restart)
+[watchdog17 10-01 06:58:46] GIVE UP: program17 failed 3 attempts — manual attention needed
+[watchdog17 10-02 09:58:14] === watchdog17 v3 start (pid 323952, max 5 restarts, poll 600s, GPU monitor on) ===
+[watchdog17 10-02 16:18:17] SUCCESS: GPU_PROGRAM17_COMPLETE marker found

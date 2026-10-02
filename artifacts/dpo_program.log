@@ -1,0 +1,169 @@
++ cd /users/mosafer/code/jspace
++ PY=.venv/bin/python
++ .venv/bin/python -m src.run_dpo --model smol135 --variant vanilla
+already trained: /users/mosafer/code/jspace/artifacts/dpo/smol135m_base_vanilla_lam1.0
++ .venv/bin/python -m src.run_dpo --model smol135 --variant jpen --lam 1.0
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 2943.67it/s]
+trainable params: 921,600 || all params: 135,436,608 || trainable%: 0.6805
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3065.98it/s]
+/users/mosafer/code/jspace/src/run_dpo.py:195: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+2424 tuning pairs
+step 1/10000 loss=3.5151 dpo=0.6931 pen=2.822 acc=0.00 (15s)
+step 10/10000 loss=3.2089 dpo=0.6864 pen=2.522 acc=0.88 (164s)
+step 20/10000 loss=2.8123 dpo=0.6649 pen=2.147 acc=0.81 (355s)
+step 30/10000 loss=2.6117 dpo=0.6634 pen=1.948 acc=0.69 (533s)
+step 40/10000 loss=2.8936 dpo=0.6473 pen=2.246 acc=0.75 (710s)
+step 50/10000 loss=5.9829 dpo=0.6233 pen=5.360 acc=0.75 (883s)
+step 60/10000 loss=2.4825 dpo=0.5633 pen=1.919 acc=0.88 (1061s)
+step 70/10000 loss=3.4348 dpo=0.5102 pen=2.925 acc=0.94 (1237s)
+step 80/10000 loss=3.2446 dpo=0.5054 pen=2.739 acc=0.81 (1414s)
+step 90/10000 loss=2.6285 dpo=0.4608 pen=2.168 acc=0.81 (1582s)
+step 100/10000 loss=2.3766 dpo=0.5175 pen=1.859 acc=0.81 (1761s)
+step 110/10000 loss=3.8391 dpo=0.5190 pen=3.320 acc=0.75 (1937s)
+step 120/10000 loss=3.0906 dpo=0.4191 pen=2.671 acc=0.94 (2105s)
+step 130/10000 loss=2.9087 dpo=0.4426 pen=2.466 acc=0.81 (2289s)
+step 140/10000 loss=4.1826 dpo=0.4702 pen=3.712 acc=0.88 (2475s)
+step 150/10000 loss=2.8241 dpo=0.4526 pen=2.371 acc=0.88 (2657s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.97it/s]Writing model shards: 100%|██████████| 1/1 [00:00<00:00,  1.97it/s]
+saved: /users/mosafer/code/jspace/artifacts/dpo/smol135m_base_jpen_lam1.0
++ .venv/bin/python -m src.eval_dpo --model smol135 --variant base
+[smol135m_base_dpo_base/seed0_calibwikitext_w0] exists, skipping
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3381.55it/s]
+smol135m_base_dpo_base: behavioral refusal rate = 0.000
+updated /users/mosafer/code/jspace/artifacts/p1/smol135m_base_dpo_base/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.eval_dpo --model smol135 --variant vanilla
+[smol135m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] exists, skipping
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3824.66it/s]
+smol135m_base_dpo_vanilla_lam1.0: behavioral refusal rate = 0.720
+updated /users/mosafer/code/jspace/artifacts/p1/smol135m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.eval_dpo --model smol135 --variant jpen
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3896.99it/s]
+[smol135m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] loaded (1s)
+[smol135m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 140s
+[smol135m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 65s
+[smol135m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.789 ComplAUC=0.692 SH=+0.598 amp_peak=2.98@L20 (140s fit + 65s eval)
+Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 3733.54it/s]
+smol135m_base_dpo_jpen_lam1.0: behavioral refusal rate = 0.710
+updated /users/mosafer/code/jspace/artifacts/p1/smol135m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.run_dpo --model smol360 --variant vanilla
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  82%|████████▏ | 238/290 [00:00<00:00, 2374.19it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2369.16it/s]
+/users/mosafer/code/jspace/src/run_dpo.py:195: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+trainable params: 1,638,400 || all params: 363,459,520 || trainable%: 0.4508
+2424 tuning pairs
+step 1/10000 loss=0.6931 dpo=0.6931 pen=0.000 acc=0.00 (22s)
+step 10/10000 loss=0.6878 dpo=0.6878 pen=0.000 acc=0.88 (241s)
+step 20/10000 loss=0.6701 dpo=0.6701 pen=0.000 acc=0.88 (503s)
+step 30/10000 loss=0.6717 dpo=0.6717 pen=0.000 acc=0.69 (742s)
+step 40/10000 loss=0.6410 dpo=0.6410 pen=0.000 acc=0.75 (981s)
+step 50/10000 loss=0.6244 dpo=0.6244 pen=0.000 acc=0.88 (1217s)
+step 60/10000 loss=0.5574 dpo=0.5574 pen=0.000 acc=1.00 (1466s)
+step 70/10000 loss=0.5202 dpo=0.5202 pen=0.000 acc=0.88 (1705s)
+step 80/10000 loss=0.5288 dpo=0.5288 pen=0.000 acc=0.75 (1955s)
+step 90/10000 loss=0.4599 dpo=0.4599 pen=0.000 acc=0.81 (2186s)
+step 100/10000 loss=0.5317 dpo=0.5317 pen=0.000 acc=0.75 (2436s)
+step 110/10000 loss=0.4912 dpo=0.4912 pen=0.000 acc=0.81 (2675s)
+step 120/10000 loss=0.3994 dpo=0.3994 pen=0.000 acc=0.94 (2911s)
+step 130/10000 loss=0.4345 dpo=0.4345 pen=0.000 acc=0.75 (3157s)
+step 140/10000 loss=0.4798 dpo=0.4798 pen=0.000 acc=0.81 (3413s)
+step 150/10000 loss=0.4372 dpo=0.4372 pen=0.000 acc=0.81 (3650s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.41s/it]
+saved: /users/mosafer/code/jspace/artifacts/dpo/smol360m_base_vanilla_lam1.0
++ .venv/bin/python -m src.run_dpo --model smol360 --variant jpen --lam 1.0
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  66%|██████▌   | 192/290 [00:00<00:00, 1914.74it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2048.70it/s]
+trainable params: 1,638,400 || all params: 363,459,520 || trainable%: 0.4508
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  77%|███████▋  | 224/290 [00:00<00:00, 2233.89it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 2268.93it/s]
+/users/mosafer/code/jspace/src/run_dpo.py:195: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+2424 tuning pairs
+step 1/10000 loss=2.1314 dpo=0.6931 pen=1.438 acc=0.00 (23s)
+step 10/10000 loss=2.2810 dpo=0.6879 pen=1.593 acc=0.88 (281s)
+step 20/10000 loss=1.7358 dpo=0.6698 pen=1.066 acc=0.88 (609s)
+step 30/10000 loss=2.3309 dpo=0.6714 pen=1.660 acc=0.69 (895s)
+step 40/10000 loss=2.1637 dpo=0.6408 pen=1.523 acc=0.75 (1176s)
+step 50/10000 loss=3.4746 dpo=0.6243 pen=2.850 acc=0.81 (1478s)
+step 60/10000 loss=1.6862 dpo=0.5581 pen=1.128 acc=1.00 (1777s)
+step 70/10000 loss=2.8683 dpo=0.5207 pen=2.348 acc=0.88 (2060s)
+step 80/10000 loss=2.8816 dpo=0.5296 pen=2.352 acc=0.81 (2352s)
+step 90/10000 loss=1.8287 dpo=0.4584 pen=1.370 acc=0.81 (2621s)
+step 100/10000 loss=1.4098 dpo=0.5327 pen=0.877 acc=0.81 (2913s)
+step 110/10000 loss=2.9748 dpo=0.4907 pen=2.484 acc=0.81 (3195s)
+step 120/10000 loss=2.2444 dpo=0.3998 pen=1.845 acc=0.94 (3475s)
+step 130/10000 loss=1.6642 dpo=0.4331 pen=1.231 acc=0.75 (3767s)
+step 140/10000 loss=2.6671 dpo=0.4784 pen=2.189 acc=0.81 (4064s)
+step 150/10000 loss=2.0565 dpo=0.4374 pen=1.619 acc=0.81 (4354s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.39s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.39s/it]
+saved: /users/mosafer/code/jspace/artifacts/dpo/smol360m_base_jpen_lam1.0
++ .venv/bin/python -m src.eval_dpo --model smol360 --variant base
+[smol360m_base_dpo_base/seed0_calibwikitext_w0] exists, skipping
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  63%|██████▎   | 183/290 [00:00<00:00, 1814.15it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1916.31it/s]
+smol360m_base_dpo_base: behavioral refusal rate = 0.020
+updated /users/mosafer/code/jspace/artifacts/p1/smol360m_base_dpo_base/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.eval_dpo --model smol360 --variant vanilla
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3807.16it/s]
+[smol360m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] loaded (1s)
+[smol360m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 260s
+[smol360m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 114s
+[smol360m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.548 ComplAUC=0.695 SH=+0.354 amp_peak=2.82@L23 (260s fit + 114s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3562.99it/s]
+smol360m_base_dpo_vanilla_lam1.0: behavioral refusal rate = 0.690
+updated /users/mosafer/code/jspace/artifacts/p1/smol360m_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.eval_dpo --model smol360 --variant jpen
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3685.35it/s]
+[smol360m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] loaded (1s)
+[smol360m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 242s
+[smol360m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 107s
+[smol360m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.534 ComplAUC=0.695 SH=+0.338 amp_peak=2.81@L23 (242s fit + 107s eval)
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 3665.57it/s]
+smol360m_base_dpo_jpen_lam1.0: behavioral refusal rate = 0.690
+updated /users/mosafer/code/jspace/artifacts/p1/smol360m_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.run_p1 --aggregate
+slug                   seeds             SafetyAUC  ComplAUC  Headroom  amp_pk  sanity
+qwen05b_base           [0, 1, 2]   0.665±0.049     0.676    +0.489    1.69  1.0000
+qwen05b_instruct       [0, 1, 2]   0.564±0.032     0.689    +0.376    1.55  1.0000
+qwen15b_base           [0, 1, 2]   0.531±0.113     0.656    +0.375    1.70  1.0000
+qwen15b_instruct       [0, 1, 2]   0.790±0.018     0.488    +0.802    1.35  1.0000
+smol135m_base          [0, 1, 2, 3, 4]  0.697±0.045     0.627    +0.570    2.78  1.0000
+smol135m_base_dpo_base [0]         0.668±0.000     0.637    +0.531    2.45  1.0000
+smol135m_base_dpo_jpen_lam1.0 [0]         0.789±0.000     0.692    +0.598    2.98  1.0000
+smol135m_base_dpo_vanilla_lam1.0 [0]         0.792±0.000     0.699    +0.593    3.02  1.0000
+smol135m_instruct      [0, 1, 2, 3, 4]  0.581±0.109     0.858    +0.223    2.79  1.0000
+smol360m_base          [0, 1, 2]   0.485±0.153     0.692    +0.293    2.58  1.0000
+smol360m_base_dpo_base [0]         0.489±0.000     0.744    +0.245    2.74  1.0000
+smol360m_base_dpo_jpen_lam1.0 [0]         0.534±0.000     0.695    +0.338    2.81  1.0000
+smol360m_base_dpo_vanilla_lam1.0 [0]         0.548±0.000     0.695    +0.354    2.82  1.0000
+smol360m_instruct      [0, 1, 2]   0.467±0.038     0.823    +0.144    1.62  1.0000
+
+pair deltas (instruct - base, paired by seed):
+  smol135: dSafetyAUC=-0.116±0.105 dCompl=+0.231 dHeadroom=-0.347 (n=5 seeds)
+  smol360: dSafetyAUC=-0.018±0.167 dCompl=+0.131 dHeadroom=-0.148 (n=3 seeds)
+  qwen05: dSafetyAUC=-0.100±0.039 dCompl=+0.013 dHeadroom=-0.113 (n=3 seeds)
+  qwen15: dSafetyAUC=+0.259±0.131 dCompl=-0.168 dHeadroom=+0.427 (n=3 seeds)
++ .venv/bin/python -m src.make_tables
+macros: 80 -> /users/mosafer/code/jspace/paper/numbers.tex
+tables -> /users/mosafer/code/jspace/paper/tables
++ .venv/bin/python -m src.make_figures
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+fig1 done
+fig2 done
+fig3 done
+fig4 done
+fig5 done
+fig6 done
+fig7 done
++ cd paper
++ bash build.sh
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+TypeError: can only concatenate str (not "float") to str
++ echo DPO_PROGRAM_COMPLETE
+DPO_PROGRAM_COMPLETE

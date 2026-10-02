@@ -1,0 +1,157 @@
++ echo 42926
+++ date -Is
++ echo '=== GPU_PROGRAM6_START 2026-09-27T08:07:09+00:00 ==='
+=== GPU_PROGRAM6_START 2026-09-27T08:07:09+00:00 ===
++ nvidia-smi
++ head -12
+Sun Sep 27 08:07:09 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A30                     On  |   00000000:25:00.0 Off |                    0 |
+| N/A   27C    P0             29W /  165W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
++ .venv/bin/python -m src.run_dpo --model qwen15 --variant vanilla --lam 1.0 --device cuda
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:15,  1.32it/s]Loading weights:  15%|█▍        | 50/338 [00:00<00:03, 77.16it/s]Loading weights:  22%|██▏       | 76/338 [00:01<00:03, 81.72it/s]Loading weights:  28%|██▊       | 94/338 [00:01<00:02, 90.23it/s]Loading weights:  33%|███▎      | 110/338 [00:01<00:02, 90.50it/s]Loading weights:  37%|███▋      | 124/338 [00:01<00:02, 88.28it/s]Loading weights:  40%|████      | 136/338 [00:01<00:02, 88.35it/s]Loading weights:  44%|████▍     | 148/338 [00:01<00:02, 93.86it/s]Loading weights:  49%|████▉     | 165/338 [00:02<00:01, 100.00it/s]Loading weights:  54%|█████▍    | 182/338 [00:02<00:01, 113.38it/s]Loading weights:  58%|█████▊    | 195/338 [00:02<00:02, 65.60it/s] Loading weights:  61%|██████    | 207/338 [00:02<00:01, 73.37it/s]Loading weights:  65%|██████▍   | 219/338 [00:02<00:01, 77.08it/s]Loading weights:  69%|██████▉   | 233/338 [00:02<00:01, 89.08it/s]Loading weights:  72%|███████▏  | 244/338 [00:03<00:01, 85.65it/s]Loading weights:  75%|███████▌  | 255/338 [00:03<00:00, 90.76it/s]Loading weights:  79%|███████▉  | 268/338 [00:03<00:00, 99.62it/s]Loading weights:  83%|████████▎ | 279/338 [00:03<00:00, 95.07it/s]Loading weights:  86%|████████▋ | 292/338 [00:03<00:00, 97.77it/s]Loading weights:  90%|████████▉ | 304/338 [00:03<00:00, 100.03it/s]Loading weights:  93%|█████████▎| 316/338 [00:03<00:00, 98.96it/s] Loading weights: 100%|██████████| 338/338 [00:03<00:00, 87.43it/s]
+/users/mosafer/spacepriv8/src/run_dpo.py:209: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+trainable params: 2,179,072 || all params: 1,545,893,376 || trainable%: 0.1410
+2424 tuning pairs
+step 1/10000 loss=0.6931 dpo=0.6931 pen=0.000 acc=0.00 (7s)
+step 10/10000 loss=0.6775 dpo=0.6775 pen=0.000 acc=0.69 (53s)
+step 20/10000 loss=0.6094 dpo=0.6094 pen=0.000 acc=0.88 (107s)
+step 30/10000 loss=0.5857 dpo=0.5857 pen=0.000 acc=0.88 (159s)
+step 40/10000 loss=0.5834 dpo=0.5834 pen=0.000 acc=0.88 (210s)
+step 50/10000 loss=0.5424 dpo=0.5424 pen=0.000 acc=0.75 (261s)
+step 60/10000 loss=0.4013 dpo=0.4013 pen=0.000 acc=0.88 (313s)
+step 70/10000 loss=0.3546 dpo=0.3546 pen=0.000 acc=1.00 (363s)
+step 80/10000 loss=0.5150 dpo=0.5150 pen=0.000 acc=0.75 (416s)
+step 90/10000 loss=0.3467 dpo=0.3467 pen=0.000 acc=0.88 (465s)
+step 100/10000 loss=0.4251 dpo=0.4251 pen=0.000 acc=1.00 (516s)
+step 110/10000 loss=0.3866 dpo=0.3866 pen=0.000 acc=0.88 (568s)
+step 120/10000 loss=0.3483 dpo=0.3483 pen=0.000 acc=0.88 (617s)
+step 130/10000 loss=0.3590 dpo=0.3590 pen=0.000 acc=0.81 (669s)
+step 140/10000 loss=0.3585 dpo=0.3585 pen=0.000 acc=0.88 (722s)
+step 150/10000 loss=0.3327 dpo=0.3327 pen=0.000 acc=0.88 (774s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:15<00:00, 15.51s/it]Writing model shards: 100%|██████████| 1/1 [00:15<00:00, 15.51s/it]
+saved: /users/mosafer/spacepriv8/artifacts/dpo/qwen15b_base_vanilla_lam1.0
++ .venv/bin/python -m src.eval_dpo --model qwen15 --variant vanilla --force
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 7853.98it/s]
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] loaded on cpu/float32 (1s)
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 958s
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 1580s
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.634 ComplAUC=0.462 SH=+0.672 amp_peak=1.79@L9 (958s fit + 1580s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 5556.87it/s]
+qwen15b_base_dpo_vanilla_lam1.0: behavioral refusal rate = 0.990
+updated /users/mosafer/spacepriv8/artifacts/p1/qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.run_dpo --model qwen15 --variant jpen --lam 1.0 --device cuda
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:36,  9.20it/s]Loading weights:  43%|████▎     | 144/338 [00:00<00:00, 814.81it/s]Loading weights:  69%|██████▉   | 233/338 [00:00<00:00, 834.36it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 821.90it/s]
+trainable params: 2,179,072 || all params: 1,545,893,376 || trainable%: 0.1410
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 61/338 [00:00<00:00, 582.82it/s]Loading weights:  46%|████▌     | 154/338 [00:00<00:00, 755.77it/s]Loading weights:  75%|███████▌  | 255/338 [00:00<00:00, 836.16it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 853.24it/s]
+/users/mosafer/spacepriv8/src/run_dpo.py:209: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+2424 tuning pairs
+step 1/10000 loss=2.6706 dpo=0.6931 pen=1.977 acc=0.00 (7s)
+step 10/10000 loss=3.1964 dpo=0.6774 pen=2.519 acc=0.62 (64s)
+step 20/10000 loss=3.0999 dpo=0.6076 pen=2.492 acc=0.88 (129s)
+step 30/10000 loss=3.6520 dpo=0.5854 pen=3.067 acc=0.88 (193s)
+step 40/10000 loss=2.9686 dpo=0.5819 pen=2.387 acc=0.88 (256s)
+step 50/10000 loss=3.5564 dpo=0.5420 pen=3.014 acc=0.75 (318s)
+step 60/10000 loss=2.2440 dpo=0.4001 pen=1.844 acc=0.88 (382s)
+step 70/10000 loss=2.5279 dpo=0.3563 pen=2.172 acc=1.00 (445s)
+step 80/10000 loss=3.1109 dpo=0.5120 pen=2.599 acc=0.75 (509s)
+step 90/10000 loss=2.5548 dpo=0.3459 pen=2.209 acc=0.88 (570s)
+step 100/10000 loss=1.6460 dpo=0.4298 pen=1.216 acc=1.00 (634s)
+step 110/10000 loss=2.0292 dpo=0.3882 pen=1.641 acc=0.88 (697s)
+step 120/10000 loss=1.1923 dpo=0.3500 pen=0.842 acc=0.88 (758s)
+step 130/10000 loss=1.6177 dpo=0.3627 pen=1.255 acc=0.75 (822s)
+step 140/10000 loss=2.8508 dpo=0.3544 pen=2.496 acc=0.88 (886s)
+step 150/10000 loss=2.0000 dpo=0.3304 pen=1.670 acc=0.88 (950s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards:   0%|          | 0/1 [00:09<?, ?it/s]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/users/mosafer/spacepriv8/src/run_dpo.py", line 249, in <module>
+    train(args)
+  File "/users/mosafer/spacepriv8/src/run_dpo.py", line 218, in train
+    merged.save_pretrained(out_dir / "merged")
+  File "/users/mosafer/spacepriv8/.venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 3543, in save_pretrained
+    safe_save_file(shard_state_dict, filename, metadata=metadata)
+  File "/users/mosafer/spacepriv8/.venv/lib/python3.12/site-packages/safetensors/torch.py", line 323, in save_file
+    serialize_file(
+safetensors._safetensors_rust.SafetensorError: Error while serializing: I/O error: No space left on device (os error 28)
++ exit 1
++ echo 48098
+++ date -Is
++ echo '=== GPU_PROGRAM6_START 2026-09-27T10:07:18+00:00 ==='
+=== GPU_PROGRAM6_START 2026-09-27T10:07:18+00:00 ===
++ nvidia-smi
++ head -12
+Sun Sep 27 10:07:18 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.91.07              Driver Version: 595.91.07      CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A30                     On  |   00000000:25:00.0 Off |                    0 |
+| N/A   27C    P0             29W /  165W |       0MiB /  24576MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
++ .venv/bin/python -m src.run_dpo --model qwen15 --variant vanilla --lam 1.0 --device cuda
+already trained: /users/mosafer/spacepriv8/artifacts/dpo/qwen15b_base_vanilla_lam1.0
++ .venv/bin/python -m src.eval_dpo --model qwen15 --variant vanilla --force
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 6546.37it/s]
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] loaded on cpu/float32 (1s)
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 1012s
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 1613s
+[qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.634 ComplAUC=0.462 SH=+0.672 amp_peak=1.79@L9 (1012s fit + 1613s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 4494.23it/s]
+qwen15b_base_dpo_vanilla_lam1.0: behavioral refusal rate = 0.990
+updated /users/mosafer/spacepriv8/artifacts/p1/qwen15b_base_dpo_vanilla_lam1.0/seed0_calibwikitext_w0.json
++ .venv/bin/python -m src.run_dpo --model qwen15 --variant jpen --lam 1.0 --device cuda
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<00:38,  8.78it/s]Loading weights:  39%|███▉      | 133/338 [00:00<00:00, 706.10it/s]Loading weights:  65%|██████▍   | 219/338 [00:00<00:00, 748.96it/s]Loading weights:  93%|█████████▎| 315/338 [00:00<00:00, 825.44it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 749.85it/s]
+/users/mosafer/spacepriv8/src/run_dpo.py:209: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:820.)
+  log.append({"step": step, "loss": float(loss), "loss_dpo": float(loss_dpo),
+trainable params: 2,179,072 || all params: 1,545,893,376 || trainable%: 0.1410
+2424 tuning pairs
+step 1/10000 loss=2.6706 dpo=0.6931 pen=1.977 acc=0.00 (7s)
+step 10/10000 loss=3.2041 dpo=0.6774 pen=2.527 acc=0.69 (64s)
+step 20/10000 loss=3.0826 dpo=0.6094 pen=2.473 acc=0.81 (130s)
+step 30/10000 loss=3.6400 dpo=0.5834 pen=3.057 acc=0.88 (193s)
+step 40/10000 loss=2.9686 dpo=0.5838 pen=2.385 acc=0.88 (256s)
+step 50/10000 loss=3.5668 dpo=0.5428 pen=3.024 acc=0.75 (318s)
+step 60/10000 loss=2.2350 dpo=0.4014 pen=1.834 acc=0.88 (382s)
+step 70/10000 loss=2.5447 dpo=0.3546 pen=2.190 acc=1.00 (445s)
+step 80/10000 loss=3.1107 dpo=0.5102 pen=2.600 acc=0.75 (509s)
+step 90/10000 loss=2.5371 dpo=0.3452 pen=2.192 acc=0.88 (569s)
+step 100/10000 loss=1.6375 dpo=0.4283 pen=1.209 acc=1.00 (633s)
+step 110/10000 loss=2.0232 dpo=0.3881 pen=1.635 acc=0.88 (696s)
+step 120/10000 loss=1.1917 dpo=0.3517 pen=0.840 acc=0.81 (757s)
+step 130/10000 loss=1.6234 dpo=0.3562 pen=1.267 acc=0.88 (820s)
+step 140/10000 loss=2.8421 dpo=0.3478 pen=2.494 acc=0.94 (885s)
+step 150/10000 loss=1.9998 dpo=0.3360 pen=1.664 acc=0.88 (949s)
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:16<00:00, 16.28s/it]Writing model shards: 100%|██████████| 1/1 [00:16<00:00, 16.28s/it]
+saved: /users/mosafer/spacepriv8/artifacts/dpo/qwen15b_base_jpen_lam1.0
++ .venv/bin/python -m src.eval_dpo --model qwen15 --variant jpen --force
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 7284.47it/s]
+[qwen15b_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] loaded on cpu/float32 (1s)
+[qwen15b_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 1016s
+[qwen15b_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] readouts: 313 danger / 250 benign in 1864s
+[qwen15b_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0] DONE sanity=1.0000 SafetyAUC=0.634 ComplAUC=0.454 SH=+0.680 amp_peak=1.78@L9 (1016s fit + 1864s eval)
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 6413.89it/s]
+qwen15b_base_dpo_jpen_lam1.0: behavioral refusal rate = 0.990
+updated /users/mosafer/spacepriv8/artifacts/p1/qwen15b_base_dpo_jpen_lam1.0/seed0_calibwikitext_w0.json
+++ date -Is
++ echo 'GPU_PROGRAM6_COMPLETE 2026-09-27T13:38:53+00:00'
+GPU_PROGRAM6_COMPLETE 2026-09-27T13:38:53+00:00

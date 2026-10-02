@@ -1,0 +1,98 @@
+{
+ "0.5|vanilla": {
+  "target": "merged",
+  "arm": "vanilla",
+  "n_prompts": 15,
+  "tau95": 4.765338897705078,
+  "affirm_success_rate": 0.4666666666666667,
+  "refusal_rate": 0.26666666666666666,
+  "alarm_rate": 0.13333333333333333,
+  "T_saf_mean": 2.20369512240092,
+  "latent_mean": 0.7271734323699154,
+  "gap_G_mean": 1.7650005235352324
+ },
+ "0.5|silent": {
+  "target": "merged",
+  "arm": "silent",
+  "n_prompts": 15,
+  "tau95": 4.765338897705078,
+  "affirm_success_rate": 0.26666666666666666,
+  "refusal_rate": 0.4666666666666667,
+  "alarm_rate": 0.0,
+  "T_saf_mean": 0.0,
+  "latent_mean": 0.8597337188444906,
+  "gap_G_mean": 4.4181947086379045
+ },
+ "1.0|vanilla": {
+  "target": "merged",
+  "arm": "vanilla",
+  "n_prompts": 15,
+  "tau95": 4.766716003417969,
+  "affirm_success_rate": 0.4666666666666667,
+  "refusal_rate": 0.5333333333333333,
+  "alarm_rate": 0.06666666666666667,
+  "T_saf_mean": 1.9505947560071946,
+  "latent_mean": 0.6986783420679158,
+  "gap_G_mean": 2.025156644381093
+ },
+ "1.0|silent": {
+  "target": "merged",
+  "arm": "silent",
+  "n_prompts": 15,
+  "tau95": 4.766716003417969,
+  "affirm_success_rate": 0.5333333333333333,
+  "refusal_rate": 0.4,
+  "alarm_rate": 0.0,
+  "T_saf_mean": 0.0,
+  "latent_mean": 0.8498524192829258,
+  "gap_G_mean": 4.40019145636366
+ },
+ "2.0|vanilla": {
+  "target": "merged",
+  "arm": "vanilla",
+  "n_prompts": 15,
+  "tau95": 4.77022647857666,
+  "affirm_success_rate": 0.5333333333333333,
+  "refusal_rate": 0.6,
+  "alarm_rate": 0.26666666666666666,
+  "T_saf_mean": 4.109202018380165,
+  "latent_mean": 0.7310613879916932,
+  "gap_G_mean": -0.38722985537059457
+ },
+ "2.0|silent": {
+  "target": "merged",
+  "arm": "silent",
+  "n_prompts": 15,
+  "tau95": 4.77022647857666,
+  "affirm_success_rate": 0.3333333333333333,
+  "refusal_rate": 0.3333333333333333,
+  "alarm_rate": 0.0,
+  "T_saf_mean": 0.0,
+  "latent_mean": 0.7830170939608944,
+  "gap_G_mean": 4.320382603323028
+ },
+ "4.0|vanilla": {
+  "target": "merged",
+  "arm": "vanilla",
+  "n_prompts": 15,
+  "tau95": 4.775778293609619,
+  "affirm_success_rate": 0.26666666666666666,
+  "refusal_rate": 0.4666666666666667,
+  "alarm_rate": 0.2,
+  "T_saf_mean": 2.5452277461687722,
+  "latent_mean": 0.7263449448602334,
+  "gap_G_mean": 1.3722480328771778
+ },
+ "4.0|silent": {
+  "target": "merged",
+  "arm": "silent",
+  "n_prompts": 15,
+  "tau95": 4.775778293609619,
+  "affirm_success_rate": 0.3333333333333333,
+  "refusal_rate": 0.4666666666666667,
+  "alarm_rate": 0.0,
+  "T_saf_mean": 0.0,
+  "latent_mean": 0.8745379051406524,
+  "gap_G_mean": 4.377148335045921
+ }
+}
