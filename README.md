@@ -1,8 +1,6 @@
 # From Latent Space to Jacobian Space: Measuring, Evading, and Training Against Safety-Content Accessibility
 
 **Mohammad Mosafer**
-
-
 ---
 
 ## Overview
