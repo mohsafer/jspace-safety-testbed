@@ -1,14 +1,0 @@
-=== M1_TEMPLATE_ABLATION_START 2026-09-26T19:17:48-05:00
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 123/290 [00:00<00:00, 1225.65it/s]Loading weights:  88%|████████▊ | 256/290 [00:00<00:00, 1280.29it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1293.66it/s]
-[qwen05b_instruct/seed0_calibwikitext_w0_notmpl] loaded on cpu/float32 (3s)
-[qwen05b_instruct/seed0_calibwikitext_w0_notmpl] lens fit: 100 prompts x 8 cot in 459s
-[qwen05b_instruct/seed0_calibwikitext_w0_notmpl] readouts: 313 danger / 250 benign in 212s
-[qwen05b_instruct/seed0_calibwikitext_w0_notmpl] DONE sanity=1.0000 SafetyAUC=0.750 ComplAUC=0.632 SH=+0.618 amp_peak=1.75@L16 (459s fit + 212s eval)
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 75/338 [00:00<00:00, 724.76it/s]Loading weights:  48%|████▊     | 162/338 [00:00<00:00, 784.58it/s]Loading weights:  75%|███████▍  | 252/338 [00:00<00:00, 835.81it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 835.63it/s]
-[qwen15b_instruct/seed0_calibwikitext_w0_notmpl] loaded on cpu/float32 (3s)
-[qwen15b_instruct/seed0_calibwikitext_w0_notmpl] lens fit: 100 prompts x 8 cot in 863s
-[qwen15b_instruct/seed0_calibwikitext_w0_notmpl] readouts: 313 danger / 250 benign in 503s
-[qwen15b_instruct/seed0_calibwikitext_w0_notmpl] DONE sanity=1.0000 SafetyAUC=0.649 ComplAUC=0.658 SH=+0.492 amp_peak=1.62@L2 (863s fit + 503s eval)
-M1_TEMPLATE_ABLATION_DONE 2026-09-26T19:53:48-05:00

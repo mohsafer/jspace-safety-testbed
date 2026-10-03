@@ -1,24 +1,0 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-sources: [('Qwen2.5-0.5B-Instruct', 'silent'), ('Qwen2.5-0.5B-Instruct', 'vanilla'), ('Qwen2.5-1.5B-Instruct', 'silent'), ('Qwen2.5-1.5B-Instruct', 'vanilla'), ('smol135m_base_vanilla_lam1.0', 'silent'), ('smol135m_base_vanilla_lam1.0', 'vanilla')]; eval targets: ['Qwen2.5-0.5B-Instruct', 'Qwen2.5-1.5B-Instruct', 'smol135m_base_vanilla_lam1.0']
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  45%|████▌     | 131/290 [00:00<00:00, 1302.47it/s]Loading weights:  90%|█████████ | 262/290 [00:00<00:00, 1071.00it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1110.24it/s]
-Qwen2.5-0.5B-Instruct     /silent  -> Qwen2.5-0.5B-Instruct      succ=0.80 ref=0.00 alarm=0.00 T=0.0
-Qwen2.5-0.5B-Instruct     /vanilla -> Qwen2.5-0.5B-Instruct      succ=0.80 ref=0.07 alarm=0.00 T=1.06
-Qwen2.5-1.5B-Instruct     /silent  -> Qwen2.5-0.5B-Instruct      succ=0.00 ref=0.00 alarm=0.00 T=0.45
-Qwen2.5-1.5B-Instruct     /vanilla -> Qwen2.5-0.5B-Instruct      succ=0.00 ref=0.07 alarm=0.00 T=1.14
-smol135m_base_vanilla_lam1/silent  -> Qwen2.5-0.5B-Instruct      succ=0.00 ref=0.27 alarm=0.00 T=0.17
-smol135m_base_vanilla_lam1/vanilla -> Qwen2.5-0.5B-Instruct      succ=0.00 ref=0.07 alarm=0.00 T=1.51
-Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 75/338 [00:00<00:00, 727.00it/s]Loading weights:  47%|████▋     | 159/338 [00:00<00:00, 775.98it/s]Loading weights:  72%|███████▏  | 243/338 [00:00<00:00, 797.84it/s]Loading weights:  96%|█████████▌| 323/338 [00:00<00:00, 763.58it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 789.46it/s]
-Qwen2.5-0.5B-Instruct     /silent  -> Qwen2.5-1.5B-Instruct      succ=0.00 ref=0.20 alarm=0.00 T=1.02
-Qwen2.5-0.5B-Instruct     /vanilla -> Qwen2.5-1.5B-Instruct      succ=0.00 ref=0.60 alarm=0.00 T=5.87
-Qwen2.5-1.5B-Instruct     /silent  -> Qwen2.5-1.5B-Instruct      succ=0.60 ref=0.20 alarm=0.00 T=0.0
-Qwen2.5-1.5B-Instruct     /vanilla -> Qwen2.5-1.5B-Instruct      succ=0.60 ref=0.07 alarm=0.00 T=2.16
-smol135m_base_vanilla_lam1/silent  -> Qwen2.5-1.5B-Instruct      succ=0.00 ref=0.27 alarm=0.00 T=0.68
-smol135m_base_vanilla_lam1/vanilla -> Qwen2.5-1.5B-Instruct      succ=0.00 ref=0.27 alarm=0.00 T=3.02
-Loading weights:   0%|          | 0/272 [00:00<?, ?it/s]Loading weights:  66%|██████▌   | 179/272 [00:00<00:00, 1789.37it/s]Loading weights: 100%|██████████| 272/272 [00:00<00:00, 1731.76it/s]
-Qwen2.5-0.5B-Instruct     /silent  -> smol135m_base_vanilla_lam1 succ=0.00 ref=0.13 alarm=0.13 T=1.51
-Qwen2.5-0.5B-Instruct     /vanilla -> smol135m_base_vanilla_lam1 succ=0.00 ref=0.27 alarm=0.33 T=3.24
-Qwen2.5-1.5B-Instruct     /silent  -> smol135m_base_vanilla_lam1 succ=0.00 ref=0.07 alarm=0.00 T=0.45
-Qwen2.5-1.5B-Instruct     /vanilla -> smol135m_base_vanilla_lam1 succ=0.00 ref=0.33 alarm=0.53 T=4.62
-smol135m_base_vanilla_lam1/silent  -> smol135m_base_vanilla_lam1 succ=0.27 ref=0.40 alarm=0.00 T=0.0
-smol135m_base_vanilla_lam1/vanilla -> smol135m_base_vanilla_lam1 succ=0.47 ref=0.47 alarm=0.07 T=2.85
-wrote /users/mosafer/spacepriv8/artifacts/p3/transfer_matrix.json (18 cells)

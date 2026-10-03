@@ -1,16 +1,0 @@
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  51%|█████▏    | 149/290 [00:00<00:00, 1420.77it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1646.19it/s]
-[smol360m_instruct] loaded (1s)
-[smol360m_instruct] lens fit 100x8 (317s)
-[smol360m_instruct] npz written; SafetyAUC recomputed 0.4144 vs committed 0.4141 (drift 0.0003)
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  51%|█████     | 148/290 [00:00<00:00, 1477.22it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1615.07it/s]
-[smol360m_base] loaded (5s)
-[smol360m_base] lens fit 100x8 (303s)
-[smol360m_base] npz written; SafetyAUC recomputed 0.4888 vs committed 0.4888 (drift 0.0000)
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  46%|████▌     | 132/290 [00:00<00:00, 1309.53it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1762.71it/s]
-[qwen05b_instruct] loaded (1s)
-[qwen05b_instruct] lens fit 100x8 (331s)
-[qwen05b_instruct] npz written; SafetyAUC recomputed 0.6045 vs committed 0.6045 (drift 0.0000)
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  50%|████▉     | 144/290 [00:00<00:00, 1428.31it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1712.85it/s]
-[qwen05b_base] loaded (5s)
-[qwen05b_base] lens fit 100x8 (291s)
-[qwen05b_base] npz written; SafetyAUC recomputed 0.7278 vs committed 0.7278 (drift 0.0000)
