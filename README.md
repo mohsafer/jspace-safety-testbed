@@ -2,7 +2,6 @@
 
 **Mohammad Mosafer**
 
-Preprint: arXiv (identifier to be inserted upon posting).
 
 ---
 
