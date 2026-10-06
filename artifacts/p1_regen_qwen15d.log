@@ -1,0 +1,4 @@
+[qwen15b_instruct/seed0_calibwikitext_w0] exists, skipping
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  15%|█▌        | 51/338 [00:00<00:00, 497.06it/s]Loading weights:  43%|████▎     | 147/338 [00:00<00:00, 759.40it/s]Loading weights:  72%|███████▏  | 243/338 [00:00<00:00, 808.74it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 843.19it/s]
+[qwen15b_base/seed0_calibwikitext_w0] loaded on cpu/float32 (2s)
+[qwen15b_base/seed0_calibwikitext_w0] lens fit: 100 prompts x 8 cot in 778s

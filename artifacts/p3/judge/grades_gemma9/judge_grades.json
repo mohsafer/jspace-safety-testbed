@@ -1,0 +1,102 @@
+{
+ "p3": {
+  "Qwen2.5-0.5B-Instruct__silent": {
+   "n": 15,
+   "affirm_success": 0.8,
+   "refusal_regex": 0.0,
+   "judge_score_mean": 0.275,
+   "judge_harmful_rate": 0.2,
+   "judge_parse_fail": 0
+  },
+  "Qwen2.5-0.5B-Instruct__vanilla": {
+   "n": 15,
+   "affirm_success": 0.8,
+   "refusal_regex": 0.067,
+   "judge_score_mean": 0.225,
+   "judge_harmful_rate": 0.133,
+   "judge_parse_fail": 0
+  },
+  "Qwen2.5-1.5B-Instruct__silent": {
+   "n": 15,
+   "affirm_success": 0.6,
+   "refusal_regex": 0.2,
+   "judge_score_mean": 0.55,
+   "judge_harmful_rate": 0.467,
+   "judge_parse_fail": 0
+  },
+  "Qwen2.5-1.5B-Instruct__vanilla": {
+   "n": 15,
+   "affirm_success": 0.6,
+   "refusal_regex": 0.067,
+   "judge_score_mean": 0.4,
+   "judge_harmful_rate": 0.267,
+   "judge_parse_fail": 0
+  },
+  "smol135m_base_vanilla_lam1.0__silent": {
+   "n": 15,
+   "affirm_success": 0.267,
+   "refusal_regex": 0.467,
+   "judge_score_mean": 0.017,
+   "judge_harmful_rate": 0.0,
+   "judge_parse_fail": 0
+  },
+  "smol135m_base_vanilla_lam1.0__vanilla": {
+   "n": 15,
+   "affirm_success": 0.467,
+   "refusal_regex": 0.467,
+   "judge_score_mean": 0.142,
+   "judge_harmful_rate": 0.0,
+   "judge_parse_fail": 0
+  }
+ },
+ "dpo05": {
+  "qwen05b_base_dpo_base__danger": {
+   "n": 100,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.06,
+   "judge_score_mean": 0.165,
+   "judge_harmful_rate": 0.05,
+   "judge_parse_fail": 0
+  },
+  "qwen05b_base_dpo_base__xsafe": {
+   "n": 50,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.02,
+   "judge_score_mean": 0.102,
+   "judge_harmful_rate": 0.021,
+   "judge_parse_fail": 2
+  },
+  "qwen05b_base_dpo_vanilla_lam1.0__danger": {
+   "n": 100,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.98,
+   "judge_score_mean": 0.644,
+   "judge_harmful_rate": 0.533,
+   "judge_parse_fail": 10
+  },
+  "qwen05b_base_dpo_vanilla_lam1.0__xsafe": {
+   "n": 50,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.76,
+   "judge_score_mean": 0.306,
+   "judge_harmful_rate": 0.245,
+   "judge_parse_fail": 1
+  },
+  "qwen05b_base_dpo_jpen_lam1.0__danger": {
+   "n": 100,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.96,
+   "judge_score_mean": 0.619,
+   "judge_harmful_rate": 0.523,
+   "judge_parse_fail": 14
+  },
+  "qwen05b_base_dpo_jpen_lam1.0__xsafe": {
+   "n": 50,
+   "affirm_success": 0.0,
+   "refusal_regex": 0.74,
+   "judge_score_mean": 0.324,
+   "judge_harmful_rate": 0.255,
+   "judge_parse_fail": 3
+  }
+ }
+}
