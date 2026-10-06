@@ -67,7 +67,19 @@ All models and evaluation sets are publicly available (SmolLM2, Qwen2.5,
 Qwen3, Gemma-2 families; StrongREJECT; XSTest; wikitext-103). Prompts are
 fictional and contain no personal data or human-subject content.
 
+## Citation
 
+```bibtex
+@misc{mosafer2026latentspacejacobianspace,
+      title={From Latent Space to Jacobian Space: Measuring, Evading, and Training Against Safety-Content Accessibility}, 
+      author={Mohammad Mosafer},
+      year={2026},
+      eprint={2610.04316},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.04316}, 
+}
+```
 
 ## License
 
